@@ -5,7 +5,7 @@
 I don't just prompt LLMs. I architect **teams of AI agents** that negotiate, veto each other, and keep a human in the loop — then I deploy them live.
 
 - 🔭 Currently building: **AI agent systems with OpenAI Agents SDK + custom MCP servers**
-- 📦 My MCP server on npm: [`@mj4384963/x-growth-mcp`](https://www.npmjs.com/package/@mj4384963/x-growth-mcp)
+- 📦 **2 MCP servers live on npm:** [`x-growth-mcp`](https://www.npmjs.com/package/@mj4384963/x-growth-mcp) (X/Twitter · 7 tools) + [`linkedin-growth-mcp`](https://www.npmjs.com/package/@mj4384963/linkedin-growth-mcp) (LinkedIn · 3 tools)
 - 🏆 5+ hackathons shipped (AMD, TechEx, Band of Agents, Arc, Bright Data)
 - 🌱 Deep in: OpenAI Agents SDK · AgentKit · MCP · RAG · Spec-Driven Development · Context Engineering
 
@@ -21,6 +21,7 @@ I don't just prompt LLMs. I architect **teams of AI agents** that negotiate, vet
 | 📄 [DocuMind AI](https://github.com/my5757980/documind-ai) | 4-agent CrewAI document intelligence pipeline (AMD Hackathon) | CrewAI · Fireworks AI · Python |
 | 🛡️ [PolicyForge](https://github.com/my5757980/policyforge) | AI security policy generator — Agent Security track @ TechEx | Python · Gemini |
 | 💼 [Office CRM](https://github.com/my5757980/office-crm) | Full-stack CRM — clients, invoices, tasks & team workflows | Next.js 15 · TypeScript · PostgreSQL |
+| 🔌 [x-growth-mcp](https://github.com/my5757980/x-growth-mcp) + [linkedin-growth-mcp](https://github.com/my5757980/linkedin-growth-mcp) | My own MCP servers — give AI assistants real X & LinkedIn tools. **Both live on npm** | Node.js · MCP SDK · OAuth |
 
 ---
 
