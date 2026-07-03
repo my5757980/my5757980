@@ -4,10 +4,10 @@
 
 I don't just prompt LLMs. I architect **teams of AI agents** that negotiate, veto each other, and keep a human in the loop — then I deploy them live.
 
-- 🔭 Currently building: **AI agent systems + custom MCP servers**
+- 🔭 Currently building: **AI agent systems with OpenAI Agents SDK + custom MCP servers**
 - 📦 My MCP server on npm: [`@mj4384963/x-growth-mcp`](https://www.npmjs.com/package/@mj4384963/x-growth-mcp)
 - 🏆 5+ hackathons shipped (AMD, TechEx, Band of Agents, Arc, Bright Data)
-- 🌱 Deep in: RAG, Multi-Agent Orchestration, MCP, Spec-Driven Development
+- 🌱 Deep in: OpenAI Agents SDK · AgentKit · MCP · RAG · Spec-Driven Development · Context Engineering
 
 ---
 
@@ -26,7 +26,13 @@ I don't just prompt LLMs. I architect **teams of AI agents** that negotiate, vet
 
 ## 🛠️ Tech Stack
 
-**AI/Agents:** OpenAI SDK · LangChain · CrewAI · RAG · ChromaDB · MCP · Groq · Whisper
+**Agent Frameworks:** OpenAI Agents SDK · OpenAI AgentKit · ChatKit + Widget · LangGraph · LangChain · CrewAI · AutoGen · MCP (build & publish custom servers)
+
+**AI/LLM:** OpenAI Python SDK · RAG · ChromaDB · Groq · Whisper · Prompt Engineering · Context Engineering
+
+**Practices:** Spec-Driven Development (SDD) · AI-Native Development · AI-Driven Development
+
+**Automation:** n8n (self-hosted workflows) · GitHub Actions
 
 **Backend:** Python (FastAPI) · Node.js (Express) · PostgreSQL · MongoDB
 
@@ -34,7 +40,7 @@ I don't just prompt LLMs. I architect **teams of AI agents** that negotiate, vet
 
 **Web3:** Solidity · Hardhat · The Graph · IPFS · Wagmi · OpenZeppelin
 
-**DevOps:** Docker · Kubernetes · GitHub Actions · Railway · Vercel
+**DevOps:** Docker · Kubernetes · Railway · Vercel
 
 ---
 
