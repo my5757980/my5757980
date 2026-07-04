@@ -58,5 +58,6 @@ I don't just prompt LLMs. I architect **teams of AI agents** that negotiate, vet
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad_Yaseen-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/muhammad-yaseen-a053272bb/)
 [![npm](https://img.shields.io/badge/npm-x--growth--mcp-CB3837?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@mj4384963/x-growth-mcp)
 [![Linktree](https://img.shields.io/badge/Linktree-yaseen5757-43E55E?style=for-the-badge&logo=linktree)](https://linktr.ee/yaseen5757)
+[![WhatsApp Channel](https://img.shields.io/badge/WhatsApp-Yaseen_AI_Labs-25D366?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029VbDAJt165yDJnlcfKA0w)
 
 > *"Shipping products, not just prompts."*
