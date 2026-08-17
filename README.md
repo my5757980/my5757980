@@ -38,7 +38,7 @@ Why this one, out of everything below:
 
 | Project | What it does |
 |---|---|
-| ⚖️ [Contract Redline War Room](https://github.com/my5757980/contract-redline-warroom) | 5 agents redline contracts over [Band](https://www.band.ai/). Compliance holds a **veto** that forces a visible re-plan; the human holds the only key. SHA-256 hash-chained audit trail you can verify from the UI. **[Live](https://web-production-26f2e.up.railway.app)** |
+| ⚖️ [Contract Redline War Room](https://github.com/my5757980/contract-redline-warroom) | 5 agents redline contracts over [Band](https://www.band.ai/). Compliance holds a **veto** that forces a visible re-plan; the human holds the only key. SHA-256 hash-chained audit trail you can verify from the UI. |
 | 🔮 [SupplyTwin](https://github.com/my5757980/supply-chain-digital-twin) | Supply-chain digital twin for UAE SMEs — predicts disruption ≥48h ahead. The 48h guarantee and the supplier-priority rule are **deterministic code**, re-checked at the API boundary; the LLM only supplies confidence and wording. Postgres RLS with `FORCE`, fails closed. 96 tests |
 | 📡 [Maya — CS Health Radar](https://github.com/my5757980/maya-cs-health-radar) | Churn-risk agent that cites its evidence. Health score is **deterministic TypeScript**; a Postgres CHECK constraint makes an ungrounded recommendation impossible to save. Nothing is ever sent — the safety boundary is enforced by absence. **[Live](https://eonhw2qcm2ajxbmcp3jdtvopw.nativelyai.app)** |
 | 📊 [CompeteIQ](https://github.com/my5757980/competitive-intel-agent) | 4-agent GTM intelligence pipeline — full competitive briefs in under 20 seconds |
