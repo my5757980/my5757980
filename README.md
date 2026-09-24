@@ -15,7 +15,7 @@ write the explanation; it does not get to be the reason you trust the number.
 **[aurum-rails-uae-remittance](https://github.com/my5757980/aurum-rails-uae-remittance)** — UAE →
 Global remittance settled on Arc in seconds, with every fee visible before you commit.
 
-▶ **[Live app](https://aurum-rails-uae-remittance.vercel.app)** · 🎬 **[2-min demo](https://streamable.com/wutq5h)** · ⛓️ **[A real transfer this app made](https://testnet.arcscan.app/tx/0x16f0e66d18a0c17f3619a966721001355735a2b49c2712eeba970c864b7db699)** — settled in 3.6 s
+▶ **[Live app](https://aurum-rails-uae-remittance.vercel.app)** · 🎬 **[2-min demo](https://streamable.com/wutq5h)** · ⛓️ **[A real transfer this app made](https://explorer.testnet.arc.io/tx/0x16f0e66d18a0c17f3619a966721001355735a2b49c2712eeba970c864b7db699)** — settled in 3.6 s
 
 Why this one, out of everything below:
 
@@ -28,7 +28,7 @@ Why this one, out of everything below:
 - Money is `bigint` minor units with branded types, not floats — because the sample it was forked
   from used floats, and that is not acceptable in a payment path.
 
-`Next.js 15 · Circle DCW · CCTP v2 · Arc Testnet · PostgreSQL`
+`Next.js 16 · Circle DCW · CCTP v2 · Arc Testnet · PostgreSQL`
 
 ---
 
@@ -39,13 +39,13 @@ Why this one, out of everything below:
 | Project | What it does |
 |---|---|
 | ⚖️ [Contract Redline War Room](https://github.com/my5757980/contract-redline-warroom) | 5 agents redline contracts over [Band](https://www.band.ai/). Compliance holds a **veto** that forces a visible re-plan; the human holds the only key. SHA-256 hash-chained audit trail you can verify from the UI. |
-| 🔮 [SupplyTwin](https://github.com/my5757980/supply-chain-digital-twin) | Supply-chain digital twin for UAE SMEs — predicts disruption ≥48h ahead. The 48h guarantee and the supplier-priority rule are **deterministic code**, re-checked at the API boundary; the LLM only supplies confidence and wording. Postgres RLS with `FORCE`, fails closed. 96 tests |
+| 🔮 [SupplyTwin](https://github.com/my5757980/supply-chain-digital-twin) | Supply-chain digital twin for UAE SMEs — predicts disruption ≥48h ahead. The 48h guarantee and the supplier-priority rule are **deterministic code**, re-checked at the API boundary; the LLM only supplies confidence and wording. Postgres RLS with `FORCE`, fails closed, with tests for the 48h floor, RLS and tenant isolation |
 | 📡 [Maya — CS Health Radar](https://github.com/my5757980/maya-cs-health-radar) | Churn-risk agent that cites its evidence. Health score is **deterministic TypeScript**; a Postgres CHECK constraint makes an ungrounded recommendation impossible to save. Nothing is ever sent — the safety boundary is enforced by absence. **[Live](https://eonhw2qcm2ajxbmcp3jdtvopw.nativelyai.app)** |
-| 📊 [CompeteIQ](https://github.com/my5757980/competitive-intel-agent) | 4-agent GTM intelligence pipeline — full competitive briefs in under 20 seconds |
-| 📄 [DocuMind AI](https://github.com/my5757980/documind-ai) | 4-agent CrewAI document pipeline on AMD MI300X via Fireworks |
+| 📊 [CompeteIQ](https://github.com/my5757980/competitive-intel-agent) | 4-step GTM intelligence pipeline — Bright Data (Web Unlocker, SERP API, Web Scraper API) pulls live web data, Groq writes the brief, and every result names the source that really served it |
+| 📄 [DocuMind AI](https://github.com/my5757980/documind-ai) | 4-agent CrewAI document pipeline — a vision agent (Kimi K2.5) plus reader, analyst and reporter agents (DeepSeek V3.1), served through Fireworks |
 | 🎯 [AMD Track 1 router](https://github.com/my5757980/amd-hackathon-track1) | Token-efficient routing agent — Tier 0 solves what it can at **zero tokens**, and falls through rather than guess |
-| 🛡️ [PolicyForge](https://github.com/my5757980/policyforge) | Plain English → enforceable security policy YAML |
-| 💸 [AgentFlow](https://github.com/my5757980/arc-hackathone) | Agent-to-agent USDC nanopayments on Arc L1 — sub-cent per task |
+| 🛡️ [PolicyForge](https://github.com/my5757980/policyforge) | Plain English → security policy YAML with Gemini; test attacks are checked against the active policies for real, and the compliance report ticks nothing without evidence |
+| 💸 [AgentFlow](https://github.com/my5757980/arc-hackathone) | Agent-to-agent USDC nanopayments on Arc L1 — sub-cent per task, every x402 payment verified on-chain |
 
 **Tools I publish**
 
@@ -58,33 +58,36 @@ Why this one, out of everything below:
 | | |
 |---|---|
 | 💼 [Office CRM](https://github.com/my5757980/office-crm) | Back office for a used-vehicle export business — lead → invoice → payment → unit → export documents. Next.js 16 · PostgreSQL |
-| 🏘️ [TokenEstate](https://github.com/my5757980/tokenestate-rwa-platform) | Real estate tokenization — ERC-1155 fractional ownership, soulbound KYC, on-chain rent. 58 tests |
+| 🏘️ [TokenEstate](https://github.com/my5757980/tokenestate-rwa-platform) | Real estate tokenization — ERC-1155 fractional ownership, soulbound KYC checked on every transfer, on-chain rent. 71 tests |
 | 🤖 [Physical AI & Humanoid Robotics](https://github.com/my5757980/PhysicalAIHumanoid) | Interactive textbook with a RAG chatbot — grounded answers, cited sections, EN ↔ اردو |
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Agent frameworks:** OpenAI Agents SDK · AgentKit · ChatKit · LangGraph · LangChain · CrewAI · AutoGen · MCP (I build and publish servers)
+Everything below runs in at least one of my repositories.
 
-**AI/LLM:** OpenAI SDK · Claude · Gemini · Groq · RAG · ChromaDB · Qdrant · Whisper · Prompt & Context Engineering
+**Agents:** CrewAI · Band SDK · MCP (I build and publish servers) · multi-agent orchestration in plain Python and TypeScript
+
+**AI/LLM:** OpenAI SDK · Claude · Gemini · Groq · Fireworks · AssemblyAI · RAG with Qdrant · Prompt & Context Engineering
 
 **Practices:** Spec-Driven Development — constitution → spec → plan → tasks → implement, with the artefacts committed
 
-**Backend:** Python (FastAPI) · Node.js (Express, NestJS) · PostgreSQL · MongoDB · Redis
+**Backend:** Python (FastAPI) · Node.js (NestJS) · PostgreSQL · Redis
 
 **Frontend:** Next.js 15/16 · React 19 · TypeScript · Tailwind CSS
 
 **Web3:** Solidity · Hardhat · The Graph · IPFS · Wagmi · OpenZeppelin · Circle (DCW, CCTP, Arc)
 
-**DevOps:** Docker · Kubernetes · Railway · Vercel · Supabase · Neon · GitHub Actions
+**DevOps:** Docker · Railway · Vercel · Supabase · Neon · GitHub Actions
 
 ---
 
 ## 📊 GitHub Stats
 
-![Muhammad's GitHub stats](https://github-readme-stats.vercel.app/api?username=my5757980&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=my5757980&layout=compact&theme=tokyonight&hide_border=true)
+<img src="assets/stats.svg" alt="GitHub stats for my public repositories" /> <img src="assets/top-langs.svg" alt="Most used languages across my public repositories" />
+
+<sub>Drawn from the GitHub API by <code>.github/scripts/stats.py</code> and refreshed every week by a GitHub Action.</sub>
 
 ---
 

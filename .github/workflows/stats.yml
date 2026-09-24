@@ -1,0 +1,35 @@
+name: Refresh profile stats
+
+# Redraws assets/stats.svg and assets/top-langs.svg from the GitHub API (see .github/scripts/stats.py)
+# and commits them only when a number changed.
+on:
+  schedule:
+    - cron: "17 3 * * 1" # every Monday, 03:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/scripts/stats.py", ".github/workflows/stats.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Draw the cards
+        run: python3 .github/scripts/stats.py my5757980 assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit them if they changed
+        run: |
+          git add assets/stats.svg assets/top-langs.svg
+          if git diff --cached --quiet; then
+            echo "Stats unchanged."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Refresh profile stats cards"
+            git push
+          fi
