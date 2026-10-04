@@ -51,7 +51,7 @@ Why this one, out of everything below:
 
 | | |
 |---|---|
-| 🔌 **3 MCP servers live on npm** | [`x-growth-mcp`](https://www.npmjs.com/package/@mj4384963/x-growth-mcp) (X · 7 tools) · [`linkedin-growth-mcp`](https://www.npmjs.com/package/@mj4384963/linkedin-growth-mcp) (LinkedIn · 3 tools) · [`threads-growth-mcp`](https://www.npmjs.com/package/@mj4384963/threads-growth-mcp) (Threads · 5 tools) |
+| 🔌 **3 MCP servers live on npm** | [`x-growth-mcp`](https://www.npmjs.com/package/@mj4384963/x-growth-mcp) (X · 7 tools) · [`linkedin-growth-mcp`](https://github.com/my5757980/linkedin-growth-mcp) (LinkedIn · 8 tools) · [`threads-growth-mcp`](https://github.com/my5757980/threads-growth-mcp) (Threads · 16 tools) |
 
 **Product & web**
 
